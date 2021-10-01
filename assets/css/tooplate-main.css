@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+  }
+
 body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
@@ -10,6 +14,14 @@ p {
 }
 a {
 	text-decoration: none!important;
+}
+
+.font-25{
+	font-size: 2.5rem !important;
+}
+
+.font-20{
+	font-size: 2rem !important;
 }
 
 .copyright-text {
@@ -136,11 +148,11 @@ a {
 }
 /* Banner Style */
 .banner {
-	margin-top: 160px;
-	background-image: url(../images/banner2.jpg);
+	margin-top: 3rem;
+	/* background-image: url(../images/banner2.jpg); */
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 150px 0px;
+	padding: 150px 0 0 0 ;
 	background-position: center center;
 }
 .banner .caption {
@@ -165,6 +177,23 @@ a {
 	margin-bottom: 20px;
 }
 
+.ban {
+	margin-top: .1rem;
+	margin-left: calc(50% - 50vw);
+	width: 99.5vw; 
+	height: auto;
+	min-height: 10em;
+	background: var(--img);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 99.5vw auto;
+	background-blend-mode: multiply;
+}
+
+.ban:nth-of-type(1) {
+	--img: url(../images/banner2.jpg)
+}
+
 /* Featured Style */
 .featured-items {
 	margin-bottom: 70px;
@@ -177,6 +206,7 @@ a {
 }
 .featured-item:hover {
 	opacity: 0.9;
+	box-shadow: 0.2px 1px 10px rgba(0, 0, 0, 0.5), 0.4px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .featured-item img {
 	width: 100%;
@@ -215,8 +245,6 @@ a {
 	margin: 0px 5px;
 	outline: none;
 }
-
-
 
 /* Subscribe Style */
 .subscribe-form {
@@ -565,11 +593,9 @@ a {
 }
 
 
-
 /* About Us Style */
 .about-page {
-	margin-top: 50px;
-    margin-bottom: 80px;
+	margin-top: 10px;
 }
 .about-page .right-content h4 {
 	font-size: 17px;
@@ -611,6 +637,22 @@ a {
 	background-color: #3a8bcd;
 }
 
+
+/* projects */
+.carousel-item{
+	width: 100%;
+	height: 40rem;
+}
+
+.carousel-item img{
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption{
+	background: rgba(0, 0, 0, 0.5);
+	margin-bottom: 2rem;
+}
 
 
 
