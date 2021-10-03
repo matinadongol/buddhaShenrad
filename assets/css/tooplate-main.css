@@ -89,6 +89,7 @@ a {
 	margin-top: 0 !important;
 	height: 100%;
 }
+
 .bg-dark {
 	background-color: #fff!important;
 	border-bottom: 1px solid #eee;
@@ -152,7 +153,7 @@ a {
 }
 /* Banner Style */
 .banner {
-	padding-top: 3rem;
+	padding-top: 10rem !important;
 	/* background-image: url(../images/banner2.jpg); */
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -184,18 +185,31 @@ a {
 .ban {
 	margin-top: .1rem;
 	margin-left: calc(50% - 50vw);
-	width: 99.5vw; 
+	width: 100%; 
 	height: auto;
 	min-height: 10em;
 	background: var(--img);
 	background-repeat: repeat;
 	background-attachment: fixed;
-	background-size: 99.5vw auto;
+	background-size: 100% auto;
 	background-blend-mode: multiply;
 }
 
 .ban:nth-of-type(1) {
 	--img: url(../images/banner2.jpg)
+}
+
+.ban2 {
+	margin-top: .1rem;
+	margin-left: calc(50% - 50vw);
+	width: 99.5vw; 
+	height: auto;
+	min-height: 10em;
+	background: url(../images/background.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 99.5vw auto;
+	background-blend-mode: multiply;
 }
 
 /* Featured Style */
@@ -600,9 +614,16 @@ a {
 /* About Us Style */
 .about-page {
 	margin-top: 10px;
+	margin-bottom: 2%;
 }
+
+.about-page .right-content {
+	padding: 2%;
+}
+
+
 .about-page .right-content h4 {
-	font-size: 17px;
+	font-size: 17px !important;
 	font-weight: 700;
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -656,6 +677,10 @@ a {
 	background-color: #3a8bcd;
 }
 
+#gallery{
+	background-color: rgb(238, 238, 238);
+}
+
 
 /* projects */
 .carousel-item{
@@ -678,7 +703,10 @@ a {
 /* Contact Page Style */
 .contact-page {
 	margin-top: 50px;
-    margin-bottom: 80px;
+}
+
+#map{
+	box-shadow: 0.2px 1px 10px rgba(0, 0, 0, 0.5), 0.4px 0px 10px rgba(0, 0, 0, 0.2);
 }
 .contact-page .right-content input,
 .contact-page .right-content textarea {
@@ -765,7 +793,7 @@ a {
 
 	.banner {
 		border-top: none;
-		padding-top: 90px;
+		padding-top: 7rem !important;
 	}
 	.navbar .navbar-brand {
 		width: 5rem;
@@ -827,6 +855,14 @@ a {
 	.about-page,
 	.contact-page {
 		margin-top: 0px;
+	}
+
+	.carousel-caption h5{
+		font-size: 16px !important;
+	}
+
+	.contact-details p{
+		font-size: 16px !important;
 	}
 
 }
