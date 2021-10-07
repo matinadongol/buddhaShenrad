@@ -5,7 +5,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 		$('.owl-carousel').owlCarousel({
-		    items:4,
+		    items:3,
 		    lazyLoad:true,
 		    loop:true,
 		    dots:true,
@@ -19,7 +19,7 @@ jQuery( document ).ready(function( $ ) {
 			            items:2,
 			        },
 			        1000:{
-			            items:4,
+			            items:3,
 			        }
 			    }
 		});
