@@ -76,16 +76,11 @@ a {
 /* Header Style */
 .navbar, .navbar-brand {
 	background-color: #caaf37 !important;
+	height: 6rem;
 }
 .navbar .navbar-brand {
-	text-align: center;
 	width: 100%;
-	position: relative;
-	padding: 25px 0px;
-}
-
-.navbar-brand {
-	height: 9rem;
+	
 }
 
 .navbar-brand img{
@@ -99,14 +94,8 @@ a {
 }
 #navbarResponsive {
 	z-index: 999;
-	position: absolute;
-	left: 50%;
-	top: 100px;
-	transform: translateX(-50%);
 }
-.navbar-dark .nav-item {
-	margin: 0px 15px;
-}
+
 
 .nav-link{
 	width: 8rem;
@@ -155,8 +144,20 @@ a {
 	font-family: 'FontAwesome';
 }
 /* Banner Style */
+.mob-banner{
+	display: none;
+}
+
+.large-img{
+	display: block;
+}
+
+.small-img{
+	display: none;
+}
+
 .banner {
-	padding-top: 10rem !important;
+	padding-top: 6rem !important;
 	/* background-image: url(../images/banner2.jpg); */
 	/* background-size: cover;
 	background-repeat: no-repeat; */
@@ -164,10 +165,10 @@ a {
 	/* background-position: center center; */
 }
 .banner .caption {
-	background-color: rgba(250,250,250,0.9);
+	background-color: rgba(238, 238, 238, 0.9);
 	padding: 3rem;
 	max-width: 450px;
-	margin-top: 5%;
+	margin: 5% 0;
 }
 .banner .caption h2 {
 	margin-top: 0px;
@@ -191,7 +192,7 @@ a {
 	margin-top: .1rem;
 	margin-left: calc(50% - 50vw);
 	width: 100%; 
-	height: 45rem;
+	height: auto;
 	min-height: 10em;
 	background: var(--img);
 	background-repeat: no-repeat;
@@ -231,31 +232,14 @@ a {
 	padding: 2%;
 }
 
-.featured{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.thanka-image{
+	width: 100%;
+	height: 40rem;
 }
 
-.thankabackground .item{
-	background-color: #eee;
-	width: 20rem;
-	height: 30rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	margin-left: 20px;
-}
-
-.featured-desc{
-	padding: 1% 2% 0 2%;
-	width: 20rem;
-	height: 5rem;
-}
-
-.featured-desc h4{
-	font-size: 1.3rem;
+.thanka-image img{
+	width: 100%;
+	height: 100%;
 }
 
 /* Featured Style */
@@ -866,10 +850,12 @@ a {
 
 /* Responsive Style */
 @media (max-width: 991px) {
+	#project{
+		display: none;
+	}
 
 	.banner {
 		border-top: none;
-		padding-top: 7rem !important;
 	}
 	.navbar .navbar-brand {
 		width: 5rem;
@@ -888,6 +874,7 @@ a {
 	    z-index: 99999;
 	    position: absolute;
 	    top: 96px;
+		left: -.5px;
 	    width: 100%;
 	    text-align: center !important;
 	    background-color: rgba(250,250,250,0.95);
@@ -952,9 +939,14 @@ a {
 		height: 20rem;
 	}
 
+	.thanka-image{
+		width: 100%;
+		height: 20rem;
+	}
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 	.subscribe-form .main-content form input.button {
 		margin-top: 20px;
@@ -963,6 +955,50 @@ a {
 		margin-top: 15px;
 		text-align: left;
 	} 
+
+	.ban{
+		display: none;
+	}
+
+	.mob-banner{
+		display: block;
+	}
+
+	.small-img{
+		display: block;
+	}
+
+	.mob-banner-img{
+		width: 100%;
+		height: 20rem;
+	}
+
+	.mob-banner-img img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.mob-banner-desc{
+		padding: 3%;
+	}
+
+	.large-img{
+		display: none;
+	}
+
+	.left-image{
+		height: 20rem !important;
+	}
+
+	.thankabackground .col{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.thankabackground .card{
+		width: 20rem;
+	}
 
 }
 
