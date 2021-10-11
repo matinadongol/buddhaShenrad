@@ -189,9 +189,9 @@ a {
 }
 
 .ban {
-	margin-top: .1rem;
+	margin-top: 0;
 	margin-left: calc(50% - 50vw);
-	width: 100%; 
+	width: 99.5vw; 
 	height: auto;
 	min-height: 10em;
 	background: var(--img);
@@ -202,7 +202,7 @@ a {
 }
 
 .ban:nth-of-type(1) {
-	--img: url(../images/kailash1.jpg)
+	--img: url(../images/banner_kailash.jpg)
 }
 
 .ban2 {
@@ -221,7 +221,7 @@ a {
 .thankabackground {
 	margin-top: .1rem;
 	margin-left: calc(50% - 50vw);
-	width: 100%; 
+	width: 99.5vw; 
 	height: auto;
 	min-height: 10em;
 	background: url(../images/background.jpg);
@@ -232,14 +232,28 @@ a {
 	padding: 2%;
 }
 
+.thanka-card{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #e6681f;
+	color: #eee;
+}
+
 .thanka-image{
 	width: 100%;
-	height: 40rem;
+	height: auto;
 }
 
 .thanka-image img{
 	width: 100%;
 	height: 100%;
+}
+
+.card-text{
+	color: rgb(255, 255, 255);
+	font-size: 1.2rem;
 }
 
 /* Featured Style */
@@ -248,13 +262,12 @@ a {
 	padding: 2% 0;
 }
 .featured-item {
-	
 	border: 1px solid #eee;
 	background-color: #eee;
-	padding: 20px;
+	padding: 10px;
 	transition: all 0.5s;
-	height: 25rem;
-	width: 20rem;
+	/* height: 25rem;
+	width: 20rem; */
 }
 .thankabackground .item:hover {
 	opacity: 0.9;
@@ -845,14 +858,11 @@ a {
 	line-height: 2.5rem;
 }
 
-
-
-
 /* Responsive Style */
 @media (max-width: 991px) {
-	#project{
+	/* #project{
 		display: none;
-	}
+	} */
 
 	.banner {
 		border-top: none;
@@ -944,6 +954,10 @@ a {
 		height: 20rem;
 	}
 
+	.carousel-item{
+		height: 30rem;
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -970,7 +984,10 @@ a {
 
 	.mob-banner-img{
 		width: 100%;
-		height: 20rem;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.mob-banner-img img{
@@ -1000,6 +1017,10 @@ a {
 		width: 20rem;
 	}
 
+	.carousel-item{
+		height: 30rem;
+	}
+
 }
 
 @media (max-width: 530px) {
@@ -1009,11 +1030,19 @@ a {
 		height: auto;
 	} 
 
+	.carousel-item{
+		height: 22rem;
+	}
+
 }
 
 @media (max-width: 390px) {
 
 	.vidbackground { 
+		height: 20rem;
+	}
+
+	.carousel-item{
 		height: 20rem;
 	}
 
